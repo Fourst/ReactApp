@@ -1,12 +1,10 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import React from 'react';//ипортирует рект
+import ReactDOM from 'react-dom';//имопрт ректДом
+import './index.css';// глобальный css
+import App from './App';//компонент
+import * as serviceWorker from './serviceWorker'; // хз что
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(<App />, document.getElementById('root'));//функция рендер у пакета ректДом ,где 1 аргм (APP компонент) и 2 аргм (куда чтобы этот апп отрендарился)
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: http://bit.ly/CRA-PWA
+//обычно создается компонент (App) в него вкладываются другие компоненты и тд
 serviceWorker.unregister();

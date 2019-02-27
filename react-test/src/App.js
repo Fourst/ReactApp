@@ -1,28 +1,24 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Dropdawn from './Dropdown';
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
+class App extends Component{
+  render(){
+    // return <div>Hello World</div>
+    return(
+      <div><Dropdawn/></div>
+    )
   }
 }
-
-export default App;
+export default App; 
+//Создали класс (Апп)  наслодовали от компонент и экспортировали. export default App; 
+//Далее нужно экспортировать класс(Компонент) от которгго мы импортируемся import React, { Component } from 'react';
+// { Component } - это одно из значение пакета 'react', в данном случае класс
+//добавить метод   render(){} ,должен быть return
+//<div>Hello World</div> не валидный 
+//----------------------------------------------------------------------------------
+//Типы данных в реакт
+//props и state
+//Локальный state - если изменения толкьо внутри конкретного компонентка, то надо локальный стайте Пр. далее
+//Создать новый класс (ДропДавн) и импортировать в (Апп)
+//Если мы хотим многострочкую верстку , то после рендора ставятся скобки круглые и возвращать только один элемент(написать два div нельзя, будет неправильно конвертироваться)
+ 
