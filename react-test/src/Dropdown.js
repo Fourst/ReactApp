@@ -11,11 +11,11 @@ class Dropdawn extends Component{
   render(){
     let dropdownText;
     if(!this.state.isOpened){
-        dropdownText = <div>Vghuuuuuuuh!</div>
+        dropdownText = <div>it`s magic</div>
     }
     return (
         <div onClick={this.toggleState.bind(this)}>
-            it`s Dropdown {dropdownText}
+            Click me {dropdownText}
         </div>)
   }
 }
